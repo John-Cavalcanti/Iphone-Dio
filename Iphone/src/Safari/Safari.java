@@ -1,15 +1,18 @@
 package Safari;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Safari implements Navegador{
+    private String paginaInicial = "Homepage";
     private String paginaAtual;
     private List<String> abas;
 
     public Safari()
     {
-        this.paginaAtual = "Homepage";
-        this.abas.add(paginaAtual);
+        this.paginaAtual = this.paginaInicial;
+        this.abas = new ArrayList<>();
+        this.abas.add(this.paginaInicial);
     }
 
     @Override

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Telefone implements Phone {
-    List<String> correioDeVoz;
+    private List<String> correioDeVoz;
 
     public Telefone()
     {
@@ -26,6 +26,7 @@ public class Telefone implements Phone {
     @Override
     public void iniciarCorreioDeVoz()
     {
-        System.out.println("tocando correio de voz");
+        System.out.println("tocando correio de voz :");
+        correioDeVoz.forEach(System.out::println);
     }
 }
